@@ -12,3 +12,4 @@
 .singular .entry-header, .singular .entry-content, .singular footer.entry-meta, .singular #comments-title, #respond {margin: 0;width: auto;}
 pre {overflow: auto;}
 .singular .entry-meta .edit-link a {left: 98%;}
+.entry-content h3, .comment-content h3 {font-size: 17px;}
