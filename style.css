@@ -1,1 +1,8 @@
+/*
+ * Theme Name: Kirby
+ * Version: 1.0
+ * Description: Kirby is a child theme for the Twenty Eleven theme.
+ * Author: Matt Rude
+ * Template: twentyeleven
+ */
 @import url("../twentyeleven/style.css");#secondary{margin-right:2.6%}#content,.singular #content{margin:0 25% 0 2.5%;position:static;width:72.5%}.singular #primary{margin:0 -26.4% 0 0}.singular .entry-header,.singular .entry-content,.singular footer.entry-meta,.singular #comments-title,#respond{margin:0;width:auto}pre{overflow:auto}.singular .entry-meta .edit-link a{left:98%}.entry-content h3,.comment-content h3{font-size:17px}
