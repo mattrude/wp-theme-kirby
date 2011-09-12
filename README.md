@@ -9,7 +9,7 @@ The Kirby Child Theme adds the following features to Twenty Eleven.
 
 ## Prerequisites
 * [WordPress](http://wordpress.org) 3.2+
-* [Twenty Eleven Theme](http://wordpress.org/extend/themes/twentyeleven)
+* [Twenty Eleven Theme](http://wordpress.org/extend/themes/twentyeleven) 1.2+
 
 ## Support
 If you are having issues using the Kirby Theme, please file a bug on this projects [github page](https://github.com/mattrude/wp-theme-kirby/issues).
