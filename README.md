@@ -1,4 +1,4 @@
-Kirby is a WordPress Child Theme of the Twenty Eleven theme bundled within WordPress 3.2+.
+Kirby is a WordPress Child Theme of the Twenty Eleven theme bundled within WordPress 3.2.
 
 The Kirby Child Theme adds the following features to Twenty Eleven.
 
