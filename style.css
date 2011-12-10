@@ -5,4 +5,85 @@
  * Author: Matt Rude
  * Template: twentyeleven
  */
-@import url("../twentyeleven/style.css");#secondary{margin-right:2.6%}#content,.singular #content{margin:0 25% 0 2.5%;position:static;width:72.5%}.singular #primary{margin:0 -26.4% 0 0}.singular .entry-header,.singular .entry-content,.singular footer.entry-meta,.singular #comments-title,#respond{margin:0;width:auto}pre{overflow:auto}.singular .entry-meta .edit-link a{left:98%}.entry-content h3,.comment-content h3{font-size:17px}
+
+@import url("../twentyeleven/style.css");
+
+#secondary {
+	margin-right:2.6%;
+}
+
+#content,.singular #content {
+	position:static;
+	width:72.5%;
+	margin:0 25% 0 2.5%;
+}
+
+.singular #primary {
+	margin:0 -26.4% 10px 0;
+}
+
+.singular .entry-header,.singular .entry-content,.singular footer.entry-meta,.singular #comments-title,#respond {
+	width:auto;
+	margin:0;
+}
+
+pre {
+	overflow:auto;
+}
+
+.singular .entry-meta .edit-link a {
+	left:98%;
+}
+
+.entry-content h3,.comment-content h3 {
+	font-size:17px;
+}
+
+.commentlist {
+	width:100%;
+}
+
+.commentlist > li.depth-1 {
+	margin-left:100px;
+}
+.image-attachment #content {
+	width: auto;
+	margin: 0 7.6%;
+}
+.singular .entry-meta .edit-link a {
+	left: 90%;
+}
+
+
+/*EXIF table*/
+#exif { overflow: hidden; max-width: 450px; text-align: left; }
+#exif-lable { margin: 0 0 0 15px; max-width: 110px; }
+#exif-lable p { margin: 0; }
+#exif-lable span { font-weight:bold; }
+#exif-data { overflow: hidden; margin: 0; float: right; width: 300px; }
+#exif-data p { margin: 0 10px; }
+
+/* Image Nav */
+.floatleft {
+        overflow: hidden;
+        float: left;
+        }
+.floatright {
+        float: right;
+        text-align: right;
+        }
+.navigation {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #E7E7E7;
+        padding: 19px 19px;
+        overflow: hidden;
+        }
+.navigation .floatright, .navigation .floatleft {
+        overflow: hidden;
+        width: 48%;
+        }
+.navigation-attachment {
+        overflow: hidden;
+        margin: 0 0 21px 0;
+        }
+
