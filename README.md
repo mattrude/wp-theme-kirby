@@ -2,6 +2,7 @@ Kirby is a WordPress Child Theme of the Twenty Eleven theme bundled within WordP
 
 The Kirby Child Theme adds the following features to Twenty Eleven.
 
+* EXIF Support for images
 * Sidebar on Single Pages and Posts
 * Wider screen display
 * [Yet Another Related Posts Plugin](http://wordpress.org/extend/plugins/yet-another-related-posts-plugin/) support
