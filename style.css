@@ -27,10 +27,6 @@
 	margin:0;
 }
 
-pre {
-	overflow:auto;
-}
-
 .singular .entry-meta .edit-link a {
 	left:98%;
 }
@@ -46,14 +42,48 @@ pre {
 .commentlist > li.depth-1 {
 	margin-left:100px;
 }
+
 .image-attachment #content {
 	width: auto;
 	margin: 0 7.6%;
 }
+
 .singular .entry-meta .edit-link a {
 	left: 90%;
 }
 
+pre {
+	background:none repeat scroll 0 0 #333333;
+	color:#FFFFFF;
+	font-family:'Luxi Mono',Monospace,'Courier New',Courier,Fixed;
+	font-size:1em;
+	line-height:1.5em;
+	overflow:auto;
+	text-align:left;
+	text-decoration:none;
+	border-color:#BDBEC5;
+	border-style:solid;
+	border-width:1px 1px 1px 4px;
+	margin:0 0 1.7em 6px;
+	padding:5px;
+}
+
+.widget-title {
+	color: #000;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 2px;
+	margin-bottom: 8px;
+	padding: 2px 0;
+	padding-top: 10px;
+	border-bottom: 1px solid #CCC;
+	text-transform: none;
+}
+
+.widget ul {
+	margin-left: 16px;
+}
 
 /*EXIF table*/
 #exif { overflow: hidden; max-width: 450px; text-align: left; }
