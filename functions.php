@@ -2,7 +2,7 @@
 
 // require_once('community-tags.php');
 
-function odin_setup() {
+function kirby_setup() {
 	// Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.
 	register_default_headers( array(
 	        'bwca' => array(
@@ -28,7 +28,7 @@ function odin_setup() {
 	add_editor_style();
 }
 
-add_action( 'after_setup_theme', 'odin_setup', 12 );
+add_action( 'after_setup_theme', 'kirby_setup', 12 );
 
 define( 'HEADER_IMAGE', apply_filters( 'odin_header_image', '/wp-content/themes/odin/images/lighthouse.jpg' ) );
 
