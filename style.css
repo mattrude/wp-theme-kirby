@@ -52,6 +52,10 @@
 	left: 90%;
 }
 
+.singular.page .hentry {
+    padding: 0;
+}
+
 pre {
 	background:none repeat scroll 0 0 #333333;
 	color:#FFFFFF;
@@ -117,3 +121,13 @@ pre {
         margin: 0 0 21px 0;
         }
 
+/* IE gravatar fix */
+#author-avatar {
+    height: 60px;
+    width: 60px;
+}
+
+/* Remove the extra space at the bottom of the rss wigets Link */
+.widget_rss_links p {
+    margin-bottom: 0;
+}
