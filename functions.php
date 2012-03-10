@@ -32,6 +32,14 @@ add_action( 'after_setup_theme', 'kirby_setup', 12 );
 
 define( 'HEADER_IMAGE', apply_filters( 'odin_header_image', '/wp-content/themes/odin/images/lighthouse.jpg' ) );
 
+// Cache posts to memcache
+function action_pre_get_posts ( $query ) {
+	if ( $query->is_main_query() )
+		$query->set( 'cache_results', true );
+}
+add_action( 'pre_get_posts', 'action_pre_get_posts' );
+
+
 /********************************************************************************
   Add Custom Taxonomies for WordPress 2.9
 */
