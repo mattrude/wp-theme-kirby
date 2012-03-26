@@ -32,7 +32,10 @@ add_action( 'after_setup_theme', 'kirby_setup', 12 );
 
 define( 'HEADER_IMAGE', apply_filters( 'odin_header_image', '/wp-content/themes/odin/images/lighthouse.jpg' ) );
 
-// Cache posts to memcache
+/********************************************************************************
+  Cache posts to memcache
+*/
+
 function action_pre_get_posts ( $query ) {
 	if ( $query->is_main_query() )
 		$query->set( 'cache_results', true );
@@ -56,6 +59,7 @@ add_action( 'init', 'create_kirby_taxonomies', 0 );
   Using WordPress functions to retrieve the extracted EXIF 
   information from database
 */
+
 function mdr_exif() { ?>
   <div id="exif">
     <h3 class='comment-title exif-title'><?php _e('Image Meta Data'); ?></h3>
@@ -116,8 +120,7 @@ function odin_image_nav() {
   <?php }
 } 
 
-function image_nav() {
-	?>
+function image_nav() { ?>
         <div class="image-navigation">
                 <div class="floatright">
                 <?php $attachments = array_values(get_children( array('post_parent' => $post->post_parent, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order ID') ));
@@ -144,7 +147,5 @@ function image_nav() {
                 <div class="floatright">
                         <?php edit_post_link('Edit Image'); ?>
                 </div>
-        </div> 
-<?php
-}
-?>
+        </div><?php
+} ?>
