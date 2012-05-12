@@ -1,133 +1,125 @@
-/*
- * Theme Name: Kirby
- * Version: 1.0
- * Description: Kirby is a child theme for the Twenty Eleven theme.
- * Author: Matt Rude
- * Template: twentyeleven
- */
-
-@import url("../twentyeleven/style.css");
-
-#secondary {
-	margin-right:2.6%;
+body {
+    color: black;
+    background: #ffffff;
+    font-family: "lucida grande", Calibri, "segoe UI", "lucida sans unicode", "Droid Sans", "DejaVu Sans", "bitstream vera sans", verdana, arial, helvetica, sans-serif;
+    margin: 0;
+    font-size: 0.90em;
 }
 
-#content,.singular #content {
-	position:static;
-	width:72.5%;
-	margin:0 25% 0 2.5%;
+#content {
+    color: black;
+    background: #ffffff;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em;
+    line-height:1.3em;
+    text-align: left;
+    max-width:800px;
+    min-width:740px; 
+    position: relative;
 }
 
-.singular #primary {
-	margin:0 -26.4% 10px 0;
+#title h1 {
+    text-align: left;
+    margin-bottom: 8px;
+    padding: 2px;
+    padding-top: 10px;
+    border-bottom: 1px solid #CCC;
 }
 
-.singular .entry-header,.singular .entry-content,.singular footer.entry-meta,.singular #comments-title,#respond {
-	width:auto;
-	margin:0;
+#title i {
+    color: #A9A9A9;
+    font-size: 0.8em;
 }
 
-.singular .entry-meta .edit-link a {
-	left:98%;
+#breadcrums {
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 8px;
+    padding: 0 4px;
 }
 
-.entry-content h3,.comment-content h3 {
-	font-size:17px;
+h2 {
+    font-weight: normal;
+    margin-bottom: 8px;
+    padding: 2px;
+    padding-top: 10px;
+    border-bottom: 1px solid #CCC;
 }
 
-.commentlist {
-	width:100%;
+a {
+    text-decoration: none;
 }
 
-.commentlist > li.depth-1 {
-	margin-left:100px;
+a,a:visited {
+    color: #4183c4;
+    background: inherit;
+    font-weight: bold;
 }
 
-.image-attachment #content {
-	width: auto;
-	margin: 0 7.6%;
+a:hover {
+    text-decoration: underline;
 }
 
-.singular .entry-meta .edit-link a {
-	left: 90%;
+#footer {
+    font-size: 80%;
+    border-top: 1px solid #CCC;
 }
 
-.singular.page .hentry {
-    padding: 0;
+.footer-left {
+    text-align: left;
+    float: left;
+    width: 49%;
+}
+
+.footer-right {
+    display: block;
+    text-align: right;
+    float: right;
+    width: 49%;
+}
+
+img {
+    border-width: 0px;
+}
+
+.center {
+    text-align: center;
+}
+
+.big {
+    font-size: larger;
+}
+
+.small {
+    font-size: small;
 }
 
 pre {
-	background:none repeat scroll 0 0 #333333;
-	color:#FFFFFF;
-	font-family:'Luxi Mono',Monospace,'Courier New',Courier,Fixed;
-	font-size:1em;
-	line-height:1.5em;
-	overflow:auto;
-	text-align:left;
-	text-decoration:none;
-	border-color:#BDBEC5;
-	border-style:solid;
-	border-width:1px 1px 1px 4px;
-	margin:0 0 1.7em 6px;
-	padding:5px;
+    font:0.85em Monaco, Consolas, 'Lucida Console', "Droid Sans Mono", "DejaVu Sans Mono", Courier, monospace;
+    width:auto;
+    overflow:auto;
+    background-color:#eee;
+    color:inherit;
+    border:1px solid #999;
+    line-height:1.3em;
+    padding:1.2ex;
 }
 
-.widget-title {
-	color: #000;
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 20px;
-	letter-spacing: 2px;
-	margin-bottom: 8px;
-	padding: 2px 0;
-	padding-top: 10px;
-	border-bottom: 1px solid #CCC;
-	text-transform: none;
+
+code {
+    font: 0.97em Monaco, Consolas, 'Lucida Console', "Droid Sans Mono", "DejaVu Sans Mono", Courier, monospace;
 }
 
-.widget ul {
-	margin-left: 16px;
+fieldset {
+    border: 1px dotted #bedce7;
+    padding: 10px 15px;
+    color: inherit;
 }
 
-/*EXIF table*/
-#exif { overflow: hidden; max-width: 450px; text-align: left; }
-#exif-lable { margin: 0 0 0 15px; max-width: 110px; }
-#exif-lable p { margin: 0; }
-#exif-lable span { font-weight:bold; }
-#exif-data { overflow: hidden; margin: 0; float: right; width: 300px; }
-#exif-data p { margin: 0 10px; }
 
-/* Image Nav */
-.floatleft {
-        overflow: hidden;
-        float: left;
-        }
-.floatright {
-        float: right;
-        text-align: right;
-        }
-.navigation {
-        background: none repeat scroll 0 0 #FFFFFF;
-        border: 1px solid #E7E7E7;
-        padding: 19px 19px;
-        overflow: hidden;
-        }
-.navigation .floatright, .navigation .floatleft {
-        overflow: hidden;
-        width: 48%;
-        }
-.navigation-attachment {
-        overflow: hidden;
-        margin: 0 0 21px 0;
-        }
-
-/* IE gravatar fix */
-#author-avatar {
-    height: 60px;
-    width: 60px;
+h1 a {
+    text-decoration: none;
 }
 
-/* Remove the extra space at the bottom of the rss wigets Link */
-.widget_rss_links p {
-    margin-bottom: 0;
-}
