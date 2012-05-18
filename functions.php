@@ -42,6 +42,22 @@ function action_pre_get_posts ( $query ) {
 }
 add_action( 'pre_get_posts', 'action_pre_get_posts' );
 
+/********************************************************************************
+  Add Footer to RSS feed
+*/
+
+function kirby_postrss($content) {
+    if(is_feed()){
+        $site_name = get_bloginfo_rss('name');
+        $post_title = get_the_title_rss();
+        $home_url = home_url('/');
+        $post_url = post_permalink();
+        $content = $content.'<a href="'.$post_url.'">'.$post_title.'</a> is a post from; <a href="'.$home_url.'">'.$site_name.'</a> which is not allowed to be copied on other sites.';
+    }
+    return $content;
+}
+add_filter('the_excerpt_rss', 'kirby_postrss');
+add_filter('the_content', 'kirby_postrss');
 
 /********************************************************************************
   Add Custom Taxonomies for WordPress 2.9
