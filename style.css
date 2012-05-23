@@ -60,7 +60,6 @@ pre {
 	background:none repeat scroll 0 0 #333333;
 	color:#FFFFFF;
 	font-family:'Luxi Mono',Monospace,'Courier New',Courier,Fixed;
-	font-size:1em;
 	line-height:1.5em;
 	overflow:auto;
 	text-align:left;
@@ -132,7 +131,11 @@ pre {
     margin-bottom: 0;
 }
 
+#site-generator {
+    padding: 2.2em 0.5em 0 2.2em;
+}
 #computer-labor {
+    background: none repeat scroll 0 0 #F9F9F9;
     color: #666666;
     font-size: 12px;
     line-height: 1.2em;
