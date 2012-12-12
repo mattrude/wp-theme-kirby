@@ -142,3 +142,6 @@ pre {
     text-align: center;
     padding: 0 0.5em 2.2em;
 }
+div#about-buttons img {
+    border:none
+}
