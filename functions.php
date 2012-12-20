@@ -18,14 +18,24 @@ function kirby_setup() {
 	                'description' => __( 'Night View', 'odin' )
 	        ),
 	        'lighthouse' => array(
-	                'url' => '%s/../odin/images/lighthouse.jpg',
-			'thumbnail_url' => '%s/../odin/images/lighthouse-thumbnail.jpg',
-	                /* translators: header image description */
-	                'description' => __( 'Light House', 'odin' )
+	            'url' => '%s/../odin/images/lighthouse.jpg',
+			    'thumbnail_url' => '%s/../odin/images/lighthouse-thumbnail.jpg',
+	            'description' => __( 'Light House', 'odin' )
 	        )
 	) );
 	
 	add_editor_style();
+
+    //Custom oEmbed Size
+    function wpb_oembed_defaults($embed_size) {
+        if(is_front_page()) {
+            $embed_size['width'] = 725;
+        } else {
+            $embed_size['width'] = 725;
+        }
+        return $embed_size;
+    }
+    add_filter('embed_defaults', 'wpb_oembed_defaults');
 }
 
 add_action( 'after_setup_theme', 'kirby_setup', 12 );
