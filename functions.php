@@ -36,6 +36,12 @@ function kirby_setup() {
         return $embed_size;
     }
     add_filter('embed_defaults', 'wpb_oembed_defaults');
+
+    // Add infinite scroll support
+    add_theme_support( 'infinite-scroll', array(
+        'container'  => 'content',
+        'footer'     => 'page',
+    ) );
 }
 
 add_action( 'after_setup_theme', 'kirby_setup', 12 );
