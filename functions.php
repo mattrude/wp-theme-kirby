@@ -26,17 +26,6 @@ function kirby_setup() {
 	
 	add_editor_style();
 
-    //Custom oEmbed Size
-    function wpb_oembed_defaults($embed_size) {
-        if(is_front_page()) {
-            $embed_size['width'] = 725;
-        } else {
-            $embed_size['width'] = 725;
-        }
-        return $embed_size;
-    }
-    add_filter('embed_defaults', 'wpb_oembed_defaults');
-
     // Add infinite scroll support
     add_theme_support( 'infinite-scroll', array(
         'container'  => 'content',
@@ -47,6 +36,17 @@ function kirby_setup() {
 add_action( 'after_setup_theme', 'kirby_setup', 12 );
 
 define( 'HEADER_IMAGE', apply_filters( 'odin_header_image', '/wp-content/themes/odin/images/lighthouse.jpg' ) );
+
+//Custom oEmbed Size
+function wpb_oembed_defaults($embed_size) {
+    if(is_front_page()) {
+        $embed_size['width'] = 725;
+    } else {
+        $embed_size['width'] = 725;
+    }
+    return $embed_size;
+}
+add_filter('embed_defaults', 'wpb_oembed_defaults');
 
 /********************************************************************************
   Cache posts to memcache
