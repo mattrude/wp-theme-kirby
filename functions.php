@@ -2,6 +2,9 @@
 
 // require_once('community-tags.php');
 
+if ( ! isset( $content_width ) )
+    $content_width = 770;
+
 function kirby_setup() {
 	// Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.
 	register_default_headers( array(
