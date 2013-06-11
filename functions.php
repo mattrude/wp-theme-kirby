@@ -40,6 +40,27 @@ add_action( 'after_setup_theme', 'kirby_setup', 12 );
 
 define( 'HEADER_IMAGE', apply_filters( 'odin_header_image', '/wp-content/themes/odin/images/lighthouse.jpg' ) );
 
+/**
+ * Deregister the JetPack Widgets css
+ *
+ * Deregister all JetPack CSS for Wdigets so we may use our own for
+ * styling reasons.  These CSS files have been brought into the main
+ * style.less & style.css files.
+ *
+ * @package bridgesinbelize
+ * @author Matt Rude (mattrude.com)
+ * @since version 0.1
+ */
+function jetpack_deregister_styles() {
+    wp_deregister_style( 'jetpack-widgets' );
+    wp_deregister_style( 'sharedaddy' );
+    wp_deregister_style( 'sharing' );
+    wp_deregister_style( 'widget-grid-and-list' );
+//    wp_deregister_style( 'admin-bar' );
+    wp_deregister_style( 'moby6-admin-bar' );
+}
+add_action( 'wp_print_styles', 'jetpack_deregister_styles', 100 );
+
 //Custom oEmbed Size
 function wpb_oembed_defaults($embed_size) {
     if(is_front_page()) {
